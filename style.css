@@ -1,0 +1,403 @@
+body{
+    padding: 20px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.section{
+    width: 70%;
+    position: relative;
+    border: solid 1px red;
+    margin-bottom: 40px;
+}
+
+.box:nth-child(1){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color:mediumturquoise;
+    color: white;
+    position: absolute;
+    top: 80px;
+}
+
+.box:nth-child(2){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+
+.box:nth-child(3){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: saddlebrown;
+    color: white;
+}
+
+
+.box:nth-child(4){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: slateblue;
+    color: white;
+}
+
+.div-form{
+    border: 1px solid black;
+    width: 70%;
+    padding: 20px;
+}
+
+.div-form input{
+    width: 250px;
+
+}
+
+.div-form input:focus{
+    background-color: yellow;
+}
+#inputCemment{
+    height: 100px;
+    
+}
+
+.container{
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+}
+
+.container header{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.container .aside{
+    width: 25%;
+    height: 400px;
+    color: white;
+    background-color: yellowgreen;
+    text-align: center;
+}
+
+.container .article{
+    width: 70%;
+    height: 400px;
+    color: white;
+    text-align: center;
+    background-color: goldenrod;
+}
+
+.box-img{
+    width: 150px;
+    height: 150px;
+    color: white;
+    position: relative;
+    margin: 15px;
+}
+
+footer{
+    background-color: red;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.geeksfor{
+    padding: 20px;
+    width: 40%;
+}
+
+.geeksfor ul{
+    padding: 0;
+    list-style-position: inside;
+}
+
+.geeksfor ul li{
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0;
+    background-color: green;
+}
+
+.geeksfor ul li:nth-child(even){
+    background-color: blue;
+    color: yellow;
+}
+
+.section-text{
+    display: flex;
+}
+
+.boxsing{
+    padding: 10px;
+    width:50%;
+    position: relative;
+}
+
+.fixed-div{
+    padding: 20px;
+    background-color: hotpink;
+    position: fixed;
+    width: 45%;
+}
+
+.sticky-div{
+    padding: 20px;
+    background-color: slateblue;
+    position: sticky;
+    top:38px;
+    width: 100%;
+    
+}
+
+.text-div{
+    width: 50%;
+    position: relative;
+    border: 3px solid slategray;
+
+}
+
+.text-div p{
+    font-size: 20px;
+}
+
+.target{
+    width: 150px;
+    height: 150px;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: blueviolet;
+}
+
+.section-grid{
+    position: relative;
+    width: 57%;
+    height: 500px;
+    margin-top: 40px;
+}
+
+.section-grid div:nth-child(1){
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+    height: 200px;
+}
+
+.section-grid div:nth-child(2){
+    border: 1px solid black;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    background-color: white;
+}
+
+.section-grid div:nth-child(3){
+    border: 1px solid black;
+    padding: 10px;
+    width: 520px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+
+.section-grid div:nth-child(4){
+    border: 1px solid black;
+    padding: 10px;
+    background-color: white;
+    width: 150px;
+    height:420px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.section2{
+    width: 70%;
+    border: solid 1px red;
+    margin-top: 40px;
+}
+
+.box2:nth-child(1){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color:mediumturquoise;
+    color: white;
+    position: relative;
+    left: -50px;
+}
+
+.box2:nth-child(2){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+}
+
+
+.box2:nth-child(3){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: saddlebrown;
+    color: white;
+}
+
+
+.box2:nth-child(4){
+    width: 70px;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+    background-color: slateblue;
+    color: white;
+}
+
+.section3{
+    padding: 20px;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+.header{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.display{
+    background-color: green;
+    color: white;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.footer{
+    padding: 10px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+}
+
+.section4{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.section4 div:nth-child(1){
+    background-color: green;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(2){
+    background-color: darkorange;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(3){
+    background-color: blue;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(4){
+    background-color: green;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(5){
+    background-color: tomato;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(6){
+    background-color: goldenrod;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(7){
+    background-color: green;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(8){
+    background-color: slateblue;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+.section4 div:nth-child(9){
+    background-color: sandybrown;
+    width: 30%;
+    height: 200px;
+    margin: 5px;
+    
+}
+
+
+
+
