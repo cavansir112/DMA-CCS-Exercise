@@ -1,0 +1,320 @@
+
+
+@import  "../css/style.css";
+
+
+@media (max-width: 1100px){
+
+    .related-img .reladet-body .reladet-text{
+        padding: 30px 0 30px 30px;
+        width: 40%;
+    }
+
+    .reladet-card .r-cad-box .r-cad{
+        padding: 20px;
+    
+    }
+}
+
+
+@media (max-width: 960px){
+    .nav ul{
+        display: none ;
+    }
+
+    .nav .search-div{
+        display: none ;
+    }
+
+    .nav .mobile-icon{
+        display: block;
+    }
+
+    .nav .bar-icons{
+        display: block ;
+    }
+
+    .header-title h1{
+        font-size: 68px;
+    }
+
+    .img-about{
+        padding: 20px 80px;
+    }
+
+    .img-about .link-div a{
+        padding: 7px 10px;
+    }
+
+    .somalia-section img{
+        height: 600px;
+    }
+
+    .icon-img{
+        top: 46%;
+        left: 46%;
+    }
+
+    .somali-textsing, .somali-p{
+        width: 45%;
+    }
+
+    .text-section .text-somali img{
+        height: 300px;
+        width: 45%;
+    }
+    
+    .text-section .text-somali .text-box{
+        height: 300px;
+        width: 45%;
+    }
+
+    .somali-video-text{
+        padding: 40px 100px;
+    }
+
+    .related-img .reladet-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .related-img .reladet-body .reladet-text{
+        padding: 40px 0;
+        width: 100%;
+    }
+
+    .related-img .reladet-body img{
+        width: 100%;
+    }
+
+    .reladet-card .r-cad-box{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .reladet-card .r-cad-box .r-cad{
+        width: 48%;
+        border: 1px solid #D2D2D2;
+    }
+
+    .email-input-box .input-box a{
+        top: 5px;
+        right: 10px;
+        font-size: 17px;
+        padding: 5px 10px;
+    }
+
+    .email-input-box .input-box input{
+        padding: 10px;
+        color: var(--black);
+        font-size: 17px;
+        width: 100%;
+    
+    }
+
+    .footer-section .list .list-box{
+        width: 33.33%;
+        margin-bottom: 50px;
+    }
+
+    .footer-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    .footer-logo h3 {
+        text-align: center;
+    }
+    
+    .footer-logo p{
+        margin: 20px 0;
+    }
+
+    .footer-icon{
+        text-align: center;
+    }
+
+    .footer-link ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+
+@media (max-width: 780px){
+ 
+    .img-about{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .img-about .img-div{
+        margin-bottom: 30px;
+    }
+
+    .somalia-section img{
+        height: 462px;
+    }
+
+    .icon-img{
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        top: 48%;
+        left: 48%;
+    }
+
+    .somali-textsing{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .somali-textsing, .somali-p{
+        width: 100%;
+    }
+
+    .text-section .text-somali img{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .text-section .text-somali .text-box{
+        width: 100%;
+        border: none;
+        padding: 40px 0;
+    }
+
+    .text-section .text-somali{
+        margin-bottom: 40px;
+        border-bottom: 1px solid #000;
+    }
+
+    .somali-p{
+        margin-bottom: 40px;
+    }
+    
+
+    #boxx1{
+        display: none;
+    }
+
+    #boxx2{
+        display: flex;
+    }
+
+    .somali-video-text{
+        padding: 40px 50px;
+    }
+    
+    .button1{
+        display: none;
+    }
+
+    .reladet-card{
+        border: none;
+    }
+
+    .reladet-card .r-cad-box{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .reladet-card .r-cad-box .r-cad:nth-of-type(2){
+        border: none;
+    }
+
+    .reladet-card .r-cad-box .r-cad{
+        width: 100%;
+        padding: 50px 0;
+        border-top: 1px solid #D2D2D2;
+        border-right: none;
+        border-left: none;
+        border-bottom:1px solid #D2D2D2 ;
+    }
+
+    .email-box{
+        width: 100%;
+    }
+
+    .email-input-box .input-box a{
+        display: none;
+    }
+
+    #input-btn{
+        display: block;
+    }
+
+    .related-img .reladet-body img{
+        height: 350px;
+    }
+    
+
+}
+
+
+@media (max-width: 540px){
+ 
+    .header-title h1{
+        font-size: 48px;
+    }
+
+    .container{
+        padding: 15px 30px;
+    }
+
+    .img-about{
+        padding: 20px 30px;
+    }
+
+    .img-about .link-div a{
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+
+    .somalia-section img{
+        height: 290px;
+    }
+
+    .icon-img{
+        line-height: 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        top: 45%;
+        left: 45%;
+    }
+
+    .somali-video-text{
+        padding: 40px 0px;
+    }
+
+    .related-img .reladet-body .reladet-text h3{
+        font-size: 25px;
+        color: var(--white);
+        margin: 20px 0;
+    }
+
+    .related-top .related-title h2{
+        font-size: 50px;
+        
+    }
+
+    .footer-section .list .list-box{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+}
