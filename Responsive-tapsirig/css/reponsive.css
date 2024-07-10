@@ -221,6 +221,11 @@
         display: none;
     }
 
+    .button2{
+        display: flex;
+        justify-content: center;
+    }
+
     .reladet-card{
         border: none;
     }
@@ -230,6 +235,7 @@
         flex-direction: column;
         gap: 0;
         padding: 0;
+        margin-bottom: 40px;
     }
 
     .reladet-card .r-cad-box .r-cad:nth-of-type(2){
@@ -316,5 +322,6 @@
         width: 50%;
         margin-bottom: 30px;
     }
+
     
 }

@@ -8,13 +8,13 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box ;
+    font-family: "Inter", sans-serif;
 }
 
 :root{
     --black:#000;
     --white:#fff;
     --border: #D2D2D2;
-    --font: "Inter", sans-serif;
 }
 
 .nav{
@@ -279,6 +279,10 @@
     
 }
 
+.button2{
+    display: none;
+}
+
 .related-top{
     border-bottom: 1px solid var(--border);
     padding: 40px 0;
@@ -296,7 +300,7 @@
     font-size: 96px;
 }
 
-.related-top .related-title .related-button{
+.related-button{
     color: var(--black);
     padding:18px 50px;
     background-color: var(--white);
@@ -304,13 +308,15 @@
     transition: 0.3s;
 }
 
-.related-top .related-title a:hover{
+.related-button:hover{
     background-color: rgb(186, 186, 186);
 }
 
 .related-img {
     padding: 30px 0;
 }
+
+
 
 .related-img .reladet-body{
     display: flex;
