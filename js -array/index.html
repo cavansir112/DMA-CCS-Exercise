@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    
+
+
+    <script>
+
+
+        // 1. Array elementlərinin cəmini / hasilini tapın
+
+        // let a =[2,4,7,4,7,8];
+        // let b = 0;
+        // let c = 1;
+
+        // for(let i = 0; i < a.length; i++){
+        //     b += a[i];
+        //     c *= a[i];
+        // }
+
+        // console.log(b,c);
+
+
+
+
+
+
+        // 2. Array elementlərinin içində təkrarlanan elementləri silin
+
+        // let a = [2,4,5,5,5,4,2,1,7,6];
+
+        // let b = [...new Set(a)];
+
+        // console.log(b);
+
+
+
+
+
+
+
+        //3. Array elementlərində ədəd olmayan elementləri silin
+
+        // let a = [ 3, 5, "dec", 98, true, "wokdmcj", false]
+        // let b = a.filter(e =>  typeof e === "number" && !isNaN(e))
+
+        // console.log(b)
+
+
+
+
+
+
+
+        //4. Array elementlərindən maksimum/minimum olanı tapın.
+
+        // let a = [2,4,5,5,5,4,2,19,7,-6];
+
+        // console.log(Math.max.apply(null, a));
+        // console.log(Math.min.apply(null, a));
+
+
+
+
+
+        
+
+        // 5. Daxil edilən cumlədəki simvol sayını çıxarın.
+
+        // let a = prompt("cumleni daxil edin :)")
+        // let b = a.split("");
+
+        // console.log(b.length);
+
+
+
+
+
+        // 6. Array elementlerini 2-yə vurub yeni bir array kimi çap edin.
+        
+        // let a = [3,5,6,5,3,5,6,4];
+        // let b = a.map(e => e * 2);
+
+        // console.log(b);
+
+
+
+
+
+        // 7. Array elementlərini tərsinə çap edin.
+
+        // let a = ["alam", "heyva", "nar"];
+        // let b = a.toReversed();
+
+        // console.log("evvel - ",a);
+        // console.log("sonra - ",b);
+
+
+
+
+
+        // 8. Verilmiş massivlərdə hər bir indeks dəyərinin cəmini hesablayan JavaScript proqramı yazın.(Massivlərin uzunluqları mütləq eyni olmalıdı)
+
+        // let a = [2,5,63,2,6];
+        // let b = [6,7,3,0,1];
+        // let c = a.map((value, index) => value + b[index])
+
+        // console.log(c);
+
+
+
+
+
+
+        //9. Sozu terisine cevirem bir peoqram yazin.
+
+        // let a = prompt("sozu daxil edin");
+        // let b = a.split("").toReversed();
+        // let c = b.join("");
+
+        // console.log(c);
+
+
+
+
+
+        // 10. Cümlədəki sözlərin yerini tərsinə çevirən program yazın. (salam mənim adım leyladır �� leyladır adım mənim salam)
+
+        // let a = prompt("cumleni daxil edin");
+        // let b = a.split(" ").toReversed();
+        // let c = b.join(" ");
+
+        // console.log(c);
+
+
+
+
+        // 11. Daxil edilmiş ədədi sözlə yazan funskiya (Məs��input:1, output : Bir)
+
+        // let a = +prompt("eded daxil edin");
+        // let b = [" ", "bir", "iki", "uc", "dord", "bes", "alti", "yeddi", "sekkiz", "doqquz", "on",];
+
+        // for(let i = 1; i < b.length; i++){
+        //     if(a == i){
+        //         alert(b[i]);
+        //     }
+        // }
+
+
+
+
+
+        // 12. Verilmiş mətndə sözlərin sayını tapın.
+
+        // let a = prompt("metn daxil edin");
+        // let b = a.split(" ");
+
+        // alert(b.length);
+
+
+
+
+
+
+        // 13. Verilmiş cümlədə artıq boşluq simvollarını silin
+
+        // let a = prompt("metn daxil edin")
+        // let b = a.split(/\s+/).filter(Boolean).join(" ");
+
+        // console.log(b);
+
+
+
+
+
+
+        // 15. İki arrayın eyniliyini yoxlayın.
+
+        // let a = ["askjcu", 3, 4, "assec"]
+        // let b = [2, 3, 4, "wegrv"]
+
+        // for(let i = 0; i < a.length; i++){
+        //     if(a[i] == b[i]){
+        //         console.log(a[i] + " ile " + b[i] + " eynidir");
+        //     }else{
+        //         console.log(a[i] + " ile " + b[i] + " eyni deyil");
+        //     }
+        // }
+
+
+
+
+
+        // 16. Array elementlərini sort metodundan istifadə etmədən artma / azalma istiqamətinə görə sıralayın (bubble sort)
+
+        // let a = [3, 5, 77, 65, 223, 1]
+
+        // for (let i = 0; i < a.length - 1; i++) {
+        //     for (let j = 0; j < a.length - 1 - i; j++) {
+        //         if (a[j] > a[j + 1]) {
+
+        //             let temp = a[j];
+        //             a[j] = a[j + 1];
+        //             a[j + 1] = temp;
+        //         }
+        //     }
+        // }
+
+        // console.log("artan sıra " + a);
+
+
+        // for (let i = 0; i < a.length - 1; i++) {
+        //     for (let j = 0; j < a.length - 1 - i; j++) {
+        //         if (a[j] < a[j + 1]) {
+
+        //             let temp = a[j];
+        //             a[j] = a[j + 1];
+        //             a[j + 1] = temp;
+        //         }
+        //     }
+        // }
+
+        // console.log("azalan sıra " + a);
+
+
+
+
+
+
+
+
+        // 17. İstifadəçidən ədəd daxil etməyini tələb edin. Proqram daxil edilən ədədi oxuyur və ədədin hər bir rəqəmini arada boşluq olmaqla ekrana verir. Məs: Giriş: 3456 Çıxış: 3 4 5 6
+
+        // let a = prompt("yalniz eded daxil edin");
+        // let b = a.split("").join(' ');
+
+        // console.log(b);
+
+
+
+
+
+        // 24. Array daxilində tək yerdə duran elementləri ekrana verin.
+
+        // let a = [2,5,7,9,34,57,90];
+        // let b = [];
+
+        // for(let i = 0; i < a.length; i++){
+        //     if(a[i] % 2 != 0){
+        //        b.push(a[i]);
+        //     }
+
+        // }
+
+        // console.log(b);
+
+
+
+
+
+        //  25. Array elementləri daxilində 5-ə bölünən ədədlərin sayını ekrana verin.
+
+        // let a = [2,5,7,10,34,50,20];
+        // let b = 0;
+
+        // for(let i = 0; i < a.length; i++){
+        //     if(a[i] % 5 == 0){
+        //        b++;
+        //     }
+
+        // }
+
+        // console.log(b);
+
+
+
+
+
+        // 26. Array elementləri daxilində 7-ə bölünən sonuncu ədədi ekrana çıxarın.
+
+        // let a = [4, 48, 51, 21, 88, 70, 63, 50];
+        // let b = 0;
+
+        
+        // for(let i = 0; i < a.length; i++){
+        //     if(a[i] % 7 == 0){
+        //        b = a[i];
+        //     }
+
+        // }
+
+        // console.log(b);
+
+
+
+
+
+
+
+        //   27. Array elementləri daxilində ən böyük və ən kiçik elementlərin yerini dəyişən proqram tərtib edin.
+
+        // let a = [4, 48, 51, 21, 88, 70, 100, 63, 50];
+        // let max = 0;
+        // let min = 0;
+
+        // for(let i = 1; i < a.length; i++){
+        //     if(a[i] > a[max]){
+        //         max = i;
+        //     }
+
+        //     if(a[i] < a[min]){
+        //         min = i;
+        //     }
+
+        // }
+
+        // console.log("evvel",a[max],a[min]);
+
+        // let temp = a[max];
+        // a[max] = a[min];
+        // a[min] = temp
+
+        // console.log("sonra",a[max],a[min]);
+
+
+
+
+
+        // 28. Verilmiş array daxilində ixtiyari(random) ədədi ekrana çıxaran proqram tərtib edin
+
+        // let a = [4, 48, 51, 21, 88, 70, 100, 63, 50];
+
+        // let b = Math.floor(Math.random() * a.length);
+
+        // console.log(a[b]);
+
+
+
+
+
+
+
+
+       
+    </script>
+</body>
+</html>
