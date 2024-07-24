@@ -34,8 +34,13 @@
         // 2. Array elementlərinin içində təkrarlanan elementləri silin
 
         // let a = [2,4,5,5,5,4,2,1,7,6];
-
-        // let b = [...new Set(a)];
+        // let b = [];
+        
+        // for(let i = 0; i < a.length; i++){ 
+        //     if(!b.includes(a[i])){
+        //         b.push(a[i])
+        //     }
+        // }
 
         // console.log(b);
 
@@ -45,10 +50,16 @@
 
 
 
-        //3. Array elementlərində ədəd olmayan elementləri silin
+        // 3. Array elementlərində ədəd olmayan elementləri silin
 
         // let a = [ 3, 5, "dec", 98, true, "wokdmcj", false]
-        // let b = a.filter(e =>  typeof e === "number" && !isNaN(e))
+        // let b = [];
+
+        // for(let i = 0; i < a.length; i++){
+        //     if(typeof a[i] === "number"){
+        //         b.push(a[i]);
+        //     }
+        // }
 
         // console.log(b)
 
@@ -60,8 +71,26 @@
 
         //4. Array elementlərindən maksimum/minimum olanı tapın.
 
-        // let a = [2,4,5,5,5,4,2,19,7,-6];
+        // let a = [2,4,5,5,20,5,4,2,19,7];
 
+
+        // 1 yol
+
+        // let max = a[0];
+        // let min = a[0];
+        // for(let i = 0; i < a.length; i++){
+        //     if(a[i] > max){
+        //         max = a[i];
+        //     }
+        //     if(a[i] < min){
+        //         min = a[i];
+        //     }
+        // }
+
+        // console.log("en boyuk qiymet: " + max);
+        // console.log("en kicik qiymet: " + min);
+
+        //  2 yol
         // console.log(Math.max.apply(null, a));
         // console.log(Math.min.apply(null, a));
 
@@ -85,7 +114,15 @@
         // 6. Array elementlerini 2-yə vurub yeni bir array kimi çap edin.
         
         // let a = [3,5,6,5,3,5,6,4];
+        // let b = [];
+
+        // yol1  
         // let b = a.map(e => e * 2);
+
+        // yol2 
+        // for(let i = 0; i < a.length; i++){
+        //     b.push(a[i] * 2)
+        // }
 
         // console.log(b);
 
@@ -109,9 +146,17 @@
 
         // let a = [2,5,63,2,6];
         // let b = [6,7,3,0,1];
-        // let c = a.map((value, index) => value + b[index])
+        // let c = [];
 
-        // console.log(c);
+        // if(a.length == b.length){
+        //     for(let i = 0; i < a.length; i++){
+        //        c.push(a[i] + b[i])
+        //     }
+        //     console.log(c);
+        // }else{
+        //     console.log("arry uzunlugu duz deyil");
+        // }
+
 
 
 
@@ -184,11 +229,17 @@
 
         // 13. Verilmiş cümlədə artıq boşluq simvollarını silin
 
-        // let a = prompt("metn daxil edin")
-        // let b = a.split(/\s+/).filter(Boolean).join(" ");
+        // let a = "wvjrjv     wecie    edjm"
+        // let b = a.split(" ");
+        // let c = [];
 
-        // console.log(b);
+        // for(let i = 0; i < b.length; i++){
+        //     if(b[i] != " "){
+        //         c.push(b[i]);
+        //     }
+        // }
 
+        // console.log(c.join(""));
 
 
 
@@ -196,10 +247,18 @@
 
         // 14. Verilmiş mətndə cümlələrin ilk sözündə olan baş hərfin böyük yazılmasını əmin edən proqram yazın
 
-        // let a = "salam millet necesiz";
-        // let b = a.slice(1);
+        // let a = "salam millet necesiz. gelin gedek.";
+        // let b = a.split(".")
+        // let c = "";
 
-        // console.log(a[0].toUpperCase() + b);
+        // for(let i = 0; i < b.length; i++){
+        //     if(b[i] != ""){
+        //         let d = b[i].trim()
+        //         c += d[0].toUpperCase() + d.slice(1) + ". ";
+        //     }
+        // }
+
+        // console.log(c);
 
 
 
@@ -262,10 +321,15 @@
 
         // 17. İstifadəçidən ədəd daxil etməyini tələb edin. Proqram daxil edilən ədədi oxuyur və ədədin hər bir rəqəmini arada boşluq olmaqla ekrana verir. Məs: Giriş: 3456 Çıxış: 3 4 5 6
 
+
         // let a = prompt("yalniz eded daxil edin");
+
         // let b = a.split("").join(' ');
 
         // console.log(b);
+
+
+
 
         
 
@@ -281,6 +345,7 @@
         // b.forEach(b => {
         // if (d[b]) {
         //     d[b]++;
+
         // } else {
         //     d[b] = 1;
         // }
@@ -288,7 +353,7 @@
 
         // for (let b in d) {
         //     if (d[b] > 1) {
-        //         console.log(b);
+        //         console.log(b + " " + d[b]);
         //     }
         // }
 
@@ -299,40 +364,53 @@
 
         // 19. Tələbələrin məlumatlarını özündə saxlayan object yaradın. İmtahandan keçməyən tələbələri objectdən silin.
 
-    //     let students = {
-    //        1: {name: "Huseyn", bal: 80},
-    //        2: {name: "Nadir", bal: 40},
-    //        3: {name: "Suleyman", bal: 100},
-    //        4: {name: "Tahir", bal: 30},
-    //     }
+        //     let students = {
+        //        1: {name: "Huseyn", bal: 80},
+        //        2: {name: "Nadir", bal: 40},
+        //        3: {name: "Suleyman", bal: 100},
+        //        4: {name: "Tahir", bal: 30},
+        //     }
 
 
-    //    for (let i in students) {
-    //         if(students[i].bal < 50){
-    //             delete students[i]
-    //         }
-    //    }
+        //    for (let i in students) {
+        //         if(students[i].bal < 50){
+        //             delete students[i]
+        //         }
+        //    }
 
-    //     console.log(students);
-
-
+        //     console.log(students);
 
 
 
-    // 20. Verilmiş 2mətnin oxşarlıq əmsalını hesablayın. ( 3 ardıcıl sözün eyniliyinə əsasən)
 
-     // let metn1="salam necesen bu gun hava yaxsidir"
+        
+
+
+
+        // qeyd : ede bilmedim!!!!!!!!  
+
+        // 20. Verilmiş 2mətnin oxşarlıq əmsalını hesablayın. ( 3 ardıcıl sözün eyniliyinə əsasən)
+
+        // let metn1="salam necesen bu gun hava yaxsidir"
         // let metn2="salam yaxsiyam bu gun hava pisdir"
-        // text=metn2[i]+" "+metn2[i+1]+" "+metn2[i+2]
-        //    if(metn1.includes(text)){
-        //     count++
+
+        // let v1 = metn1.split();
+        // let v2 = metn2.split();
+
+        // let count=0;
+
+        // for(let i = 0; i < metn1.length; i++){
+        //     if(v1[i] == v2[i]){
+        //         count++;
+        //     }
         // }
 
-        // let arr1=[1,2,3]
-        // let arr2=[3,2,1] 
-        // uzunluq
-        // index
-        // arr[i]=arr2[i]
+        // if(count){
+
+        // }
+
+
+
 
 
 
@@ -343,14 +421,15 @@
         // let em = +prompt("1 saatliq emek haqqini daxil edin");
         // let hef = +prompt("heftelik is saatini daxil edin");
 
-        // let hm = em * hef;
-        // let ayliq = hm * 4
+        // let maash = 0;
         
-        // if(hef > 40){
-        //     console.log("heftelik is saati 40 saatdan cox oldugu ucun maas 2 qat hesablanir : " + ayliq * 2);
+        // if(hef >= 40){
+        //     maash=(em*40+(hef-40)*2*em)*4;
         // }else{
-        //     console.log("ayliq emek haqqi : " + ayliq);
+        //     maash=em*hef*4;
         // }
+
+        // console.log(maash);
 
 
 
@@ -547,6 +626,22 @@
         // 32. Daxil olunmuş mətndə saitləri silən proqram yaradın
 
         // let a = "adam kisi olar";
+        // let b = "aeiouAEIOU";
+        // let c = "";
+
+        // yol1
+        // for(let i = 0; i < a.length; i++){
+        //     if(!b.includes(a[i])){
+        //         c += a[i]
+        //     }
+        // }
+
+        // console.log(c);
+
+
+
+        
+        // yol2
         // let b = a.replace(/[aeiouAEIOU]/g,"");
 
         // console.log(b);
@@ -579,10 +674,17 @@
         // 34. Daxil olunmuş sözdə neçə sait və samit olduğunu tapın
 
         // let a = "Suleyman";
-        // let b = a.replace(/[aeiouAEIOU]/g,"").split("");
+        // let c = "";
+        // let b = "aeiouAEIOU";
 
-        // let al = b.length;
-        // let ml = a.length - b.length
+        //  for(let i = 0; i < a.length; i++){
+        //     if(!b.includes(a[i])){
+        //         c += a[i]
+        //     }
+        // }
+
+        // let al = c.length;
+        // let ml = a.length - c.length
 
 
         // console.log("samitlerin sayi: " + al);
