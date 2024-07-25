@@ -231,15 +231,15 @@
 
         // let a = "wvjrjv     wecie    edjm"
         // let b = a.split(" ");
-        // let c = [];
+        // let resultArray=[];
 
         // for(let i = 0; i < b.length; i++){
-        //     if(b[i] != " "){
-        //         c.push(b[i]);
-        //     }
+        //     if(b[i] !== ""){
+        //         resultArray.push(b[i]+" ");
+        //     } 
         // }
 
-        // console.log(c.join(""));
+        // console.log(resultArray.join("").trim())
 
 
 
@@ -322,11 +322,13 @@
         // 17. İstifadəçidən ədəd daxil etməyini tələb edin. Proqram daxil edilən ədədi oxuyur və ədədin hər bir rəqəmini arada boşluq olmaqla ekrana verir. Məs: Giriş: 3456 Çıxış: 3 4 5 6
 
 
-        // let a = prompt("yalniz eded daxil edin");
+        // let a = +prompt("yalniz eded daxil edin");
 
-        // let b = a.split("").join(' ');
+        // let b = a.toString();
 
-        // console.log(b);
+        // let c = b.split("")
+
+        // console.log(c.join(" "));
 
 
 
@@ -387,27 +389,28 @@
 
 
 
-        // qeyd : ede bilmedim!!!!!!!!  
 
         // 20. Verilmiş 2mətnin oxşarlıq əmsalını hesablayın. ( 3 ardıcıl sözün eyniliyinə əsasən)
 
         // let metn1="salam necesen bu gun hava yaxsidir"
         // let metn2="salam yaxsiyam bu gun hava pisdir"
 
-        // let v1 = metn1.split();
-        // let v2 = metn2.split();
+        // let v1 = metn1.split(" ");
+        // let v2 = metn2.split(" ");
 
-        // let count=0;
+        // console.log(v1,v2);
 
-        // for(let i = 0; i < metn1.length; i++){
+        // let count=[];
+
+
+        // for(let i = 0; i < v1.length; i++){
         //     if(v1[i] == v2[i]){
-        //         count++;
+        //         count.push(i);
         //     }
         // }
 
-        // if(count){
 
-        // }
+        // console.log("cumlede " + count.length + " eyni soz var" );
 
 
 
