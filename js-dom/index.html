@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="">
@@ -25,38 +27,159 @@
     <div>
         <input id="effekt1"  style="margin: 0 30px;" placeholder="withd..." type="text">
         <input id="effekt2" style="margin: 0 30px;" placeholder="hight..." type="text">
-        <input id="effekt2" style="margin: 0 30px;" placeholder="border withd..." type="text">
+        <input id="effekt3" style="margin: 0 30px;" placeholder="border withd..." type="text">
     </div>
     <div style="display: flex; gap: 15px; margin: 50px 0; padding: 0 30px;" class="">
         <select name="" id="sel1">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="" selected>border-style</option>
+            <option value="solid">solid</option>
+            <option value="dashet">dashet</option>
+            <option value="double">double</option>
         </select>
         <select  name="" id="sel2">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="" selected>border-color</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
         </select>
         <select  name="" id="sel3">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="" selected>color</option>
+            <option value="blue">blue</option>
+            <option value="red">red</option>
+            <option value="yellow">yellow</option>
         </select>
         <select  name="" id="sel4">
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="" selected>background-color</option>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="yellow">yellow</option>
         </select>
         <button id="btnF">ok</button>
     </div>
-    <div id="box" style="width: 100px; height: 100px; border: 1px solid black; margin: 100px;" class="box">
+    <div id="box" class="box">
+        hello word
+    </div>
+
+
+
+    <div style="margin: 100px 0;">
+        <input id="intB1" placeholder="withd..." type="text">
+        <input id="intB2" placeholder="hight..." type="text">
+        <input id="intB3" placeholder="border withd..." type="text">
+    </div>
+
+    <div id="box2" class="box2">
 
     </div>
+
+
+
+
+    <div class="box-cal">
+        <input type="text" disabled id="textInp" class="caltext" value="" />
+        <div class="cal">
+          <button class="btnQ btn1" value="+" onclick="simvol(this)">+</button>
+          <button class="btnQ btn2" value="-" onclick="simvol(this)">-</button>
+          <button class="btnQ btn3" value="" onclick="simvol(this)"></button>
+          <button class="btnQ btn4" value="/" onclick="simvol(this)">/</button>
+          <button class="btnC btn5" value="1" onclick="simvol(this)">1</button>
+          <button class="btnC btn6" value="2" onclick="simvol(this)">2</button>
+          <button class="btnC btn7" value="3" onclick="simvol(this)">3</button>
+          <button class="btnB" value="=" onclick="hesabla()">=</button>
+          <button class="btnC btn9" value="4" onclick="simvol(this)">4</button>
+          <button class="btnC btn10" value="5" onclick="simvol(this)">5</button>
+          <button class="btnC btn11" value="6" onclick="simvol(this)">6</button>
+          <button class="btnC btn12" value="7" onclick="simvol(this)">7</button>
+          <button class="btnC btn13" value="8" onclick="simvol(this)">8</button>
+          <button class="btnC btn14" value="9" onclick="simvol(this)">9</button>
+          <button class="btnC btn15" value="0" onclick="simvol(this)">0</button>
+          <button class="btnC btn16" value="." onclick="simvol(this)">.</button>
+          <button class="btn-ac" value="ac" onclick="clearInput()">AC</button>
+        </div>
+      </div>
+
+
+    
+    <section class="portfoli-section">
+        <h2 class="text-top">PORTFOLIO</h2>
+        <h4 class="text-i"><i>Lorem ipsum dolor sit amet consectetur.</i></h4>
+        <div class="portfoli-box">
+            <div class="box-card">
+                <img src="img/portfoli1.jpg" alt="">
+                <div class="line">+</div>
+                <h3>Threads</h3>
+                <h4 >Illustration</h4>
+            </div>
+            <div class="box-card">
+                <img src="img/portfoli2.jpg" alt="">
+                <div class="line">+</div>
+                <h3>Explore</h3>
+                <h4 >Graphic Design</h4>
+            </div>
+            <div class="box-card">
+                <img src="img/portfoli3.jpg" alt="">
+                <div class="line">+</div>
+                <h3>Finish</h3>
+                <h4 >Identity</h4>
+            </div>
+            <div class="box-card">
+                <img src="img/portfoli4.jpg" alt="">
+                <div class="line">+</div>
+                <h3>Lines</h3>
+                <h4 >Branding</h4>
+            </div>
+            <div class="box-card">
+                <img src="img/portfoli5.jpg" alt="">
+                <div class="line">+</div>
+                <h3>Southwest</h3>
+                <h4 >Website Design</h4>
+            </div>
+            <div class="box-card">
+                <img src="img/portfoli6.jpg" alt="">
+                <div class="line">+</div>
+                <h3>Window</h3>
+                <h4 >Photography</h4>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="divImgA" class="div-img">
+        <i id="clouseIcon" class="fa-solid fa-xmark"></i>
+        <h1>PROJECT NAME</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <img id="ImgFix" src="" alt="">
+        <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo! </p>
+        <div style="display: flex; align-items: center; gap: 20px; justify-content: center; height: 20px;" class="div"><h5>Client: </h5><span id="spanText1"></span></div>
+        <div style="display: flex; align-items: center; gap: 20px; justify-content: center; height: 20px; margin-bottom: 50px;" class="div"><h5>Category:  </h5><span id="spanText2"></span></div>
+        <a class="btn-a" href=""> x close Projekt</a>
+
+    </div>
+
+
+
+
+    <div class="list-section">
+        <div class="list-div">
+            <h2><i class="fa-solid fa-angle-right"></i> Fealiyetimiz </h2>
+            <div class="text-d">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptates optio nisi! Molestiae ad maxime recusandae, doloribus, natus quasi laborum perspiciatis reprehenderit excepturi, adipisci saepe maiores molestias corrupti similique vel?</p>
+            </div>
+            <h2><i class="fa-solid fa-angle-right"></i> Esas meqsedimiz </h2>
+            <div class="text-d">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptates optio nisi! Molestiae ad maxime recusandae, doloribus, natus quasi laborum perspiciatis reprehenderit excepturi, adipisci saepe maiores molestias corrupti similique vel?</p>
+            </div>
+            <h2><i class="fa-solid fa-angle-right"></i> Esas hedeflerimiz </h2>
+            <div class="text-d">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia voluptates optio nisi! Molestiae ad maxime recusandae, doloribus, natus quasi laborum perspiciatis reprehenderit excepturi, adipisci saepe maiores molestias corrupti similique vel?</p>
+            </div>
+        </div>
+    </div>
+
+
+
+   
+
 
 
     <script src="main.js"></script>

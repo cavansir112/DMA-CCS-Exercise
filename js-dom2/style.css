@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-section{
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    background-color: blue;
+}
+
+
+.list-box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+
+}
+
+.inputDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inputDiv input{
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+
+.inputDiv button{
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.listUl{
+    margin-top: 50px;
+}
+
+
+.listUl li{
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: azure;
+}
+
+.listUl li i{
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.slide-section{
+    width: 70%;
+    margin: 100px auto;
+
+}
+
+.slide-section .slide-box {
+    position: relative;
+    width: 100%;
+}
+
+.slide-section .slide-box #leftBtn{
+    position: absolute;
+    left: 20px;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.slide-section .slide-box #rightBtn{
+    position: absolute;
+    right: 20px;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.782);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.slide-section .slide-box img{
+    width: 100%;
+    height: 500px;
+}
+
+.slide-boxsing{
+    display: flex;
+    width: 100%;
+}
+
+.slide-boxsing img{
+    width: 16.66%;
+    height: 100px;
+}
+
+
+
+
+.Portfoli-section{
+    width: 70%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.Portfoli-section h2{
+    font-size: 40px;
+}
+
+
+.port-list{
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+.port-list ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.port-list ul li{
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.port-list ul li:hover{
+    background-color: blue;
+}
+
+
+.port-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.port-box .boxs{
+    width: calc(33% - 17px);
+    border-left: 1px solid rgb(179, 179, 179) ;
+    border-right: 1px solid rgb(179, 179, 179) ;
+    padding: 10px;
+    text-align: center
+}
+
+.port-box .boxs img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
+.port-box .boxs h5{
+    font-size: 20px;
+
+
+}
+
+.port-box .boxs p{
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.active-li{
+    background-color: blue !important;
+}
+
+
+.divs{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.div-sec span{
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.divs .bar{
+    width: 50px;
+    height: 100%;
+    background-color: yellow;
+
+}
+
+
+
