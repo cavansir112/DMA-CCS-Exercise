@@ -222,5 +222,328 @@
 
 }
 
+#liItem li{
+    padding: 10px;
+    border:1px solid black;
+    cursor: pointer;
+}
+
+
+#leftItem{
+    padding: 10px;
+    border:1px solid black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+#rightItem{
+    padding: 10px;
+    border:1px solid black;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.activeLi{
+    background-color: antiquewhite;
+}
+
+
+
+.text-section{
+    padding: 100px;
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#azBtn{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#inBtn{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.type-section-az, .type-section-in{
+    display: none;
+}
+
+.type-section-az button,.type-section-in button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.list-Item{
+    margin: 100px 50px;
+}
+
+
+#liItem{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.tabBoxOne {  
+    background-color: #007bff;
+    padding: 40px;  
+    width: 80%;  
+    margin: 40px auto;  
+    border-radius: 15px;  
+    box-shadow: 4px 4px 4px rgb(6, 5, 5, 0.5), -4px -4px 4px rgb(6, 5, 5, 0.5);  
+  }  
+    
+  .tabContainerOne {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+  }  
+    
+  .tabOne {  
+    background-color: #ffffff;
+    padding: 15px 30px;  
+    border: none;  
+    cursor: pointer;  
+    font-size: 16px;  
+    margin-right: 10px;  
+  }  
+    
+  .tabOne:last-child {  
+    margin-right: 0;  
+  }
+  
+  .tabOne:hover{
+    background-color: rgb(224, 240, 253);
+  }
+  
+  /* Box two  */
+  
+  .tabBoxTwo {  
+    background-color: #007bff;
+    padding: 40px;  
+    width: 80%;  
+    margin: 40px auto;  
+    border-radius: 15px;  
+    box-shadow: 4px 4px 4px rgb(6, 5, 5, 0.5), -4px -4px 4px rgb(6, 5, 5, 0.5); 
+    display: none;
+  }  
+  
+  .tabContainerTwo{
+    display: flex;  
+    justify-content: center;  
+    align-items: center;
+  }
+    
+  .tabTwo {  
+    background-color: #ffffff;
+    border: none;  
+    padding: 15px 30px;  
+    font-size: 16px;  
+    cursor: pointer;  
+    margin-right: 10px;  
+  }  
+    
+  .tabTwo:last-child {  
+    margin-right: 0;  
+  }  
+  
+  .tabTwo:hover{
+    background-color: rgb(224, 240, 253);
+  }
+    
+  
+  /* Quiz boxs  */
+  
+  
+  .quizBoxOne{
+    background-color: #007bff;
+    padding: 30px;  
+    width: 80%;  
+    margin: 30px auto;  
+    border-radius: 15px;  
+    box-shadow: 4px 4px 4px rgb(6, 5, 5, 0.5), -4px -4px 4px rgb(6, 5, 5, 0.5); 
+    display: none;
+  }
+  
+  .quizContainerOne {
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .questionBoxOne {
+    width: 80%;
+    background-color: #0651c9;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 4px 4px 4px rgb(6, 5, 5, 0.5), -4px -4px 4px rgb(6, 5, 5, 0.5);
+  }
+  
+  .optionsBoxOne {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .optionBoxOne {
+    width: 45%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 7px;
+  }
+  
+  .optionBoxOne:hover {
+    background-color: #0065d1;
+  }
+  
+  .navigationBox {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrowLeft , .arrowRight{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+  }
+  .arrowLeft img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .arrowRight img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .arrowLeft:hover{
+    background-color: rgb(224, 240, 253);
+  }
+  
+  .arrowRight:hover{
+    background-color: rgb(224, 240, 253);
+  }
+  
+  .pageBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pageListBox {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 7px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pageListBox:hover {
+    background-color: green;
+  }
+  
+  
+  /* Results Box  */
+  
+  
+  .resultsContainer {
+    background-color: #007bff;
+    padding: 50px;  
+    width: 80%;  
+    margin: 30px auto;  
+    border-radius: 15px;  
+    box-shadow: 4px 4px 4px rgb(6, 5, 5, 0.5), -4px -4px 4px rgb(6, 5, 5, 0.5); 
+    text-align: center;
+    color: white;
+    display: none;
+  }
+  
+  .resultsContainer h1 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  
+  .resultsContainer p {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .resultBox {
+    color: black;
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  
+  .true:hover{
+    background-color: green;
+  }
+  
+  .false:hover{
+    background-color: red;
+  }
+  
+  .btn-active{
+    background-color: green;
+  }
+  
+
+
+
 
 

@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.nav i{
+    cursor: pointer;
+}
+
+
+.world-section h1{
+    font-size: 24px;
+}
+
+.world-section{
+    padding: 50px;
+}
+
+.world{
+    margin-top: 40px;
+    padding: 100px 40px;
+}
+
+.search-div {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.search-div i{
+    font-size: 20px;
+}
+
+
+.search-div input{
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background: none;
+}
+
+.world-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card{
+    width: calc(25% - 30px);
+    margin: 30px 0;
+
+}
+
+@media(max-width: 960px){
+    .card{
+        width: calc(33% - 25px);
+        margin: 30px 0;
+    
+    }
+
+
+    .card-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-section img{
+        width: 100% !important;
+    }
+
+    .card-section .car-text{
+        width: 100% !important;
+    }
+}
+
+@media(max-width: 760px){
+    .card{
+        width: calc(50% - 20px);
+    
+    }
+
+    .search-div{
+        width: 250px;
+    }
+
+    .world{
+        padding: 40px 20px;
+    }
+}
+
+@media(max-width: 590px){
+    .card{
+        width: calc(100% - 0px);
+    
+    }
+
+    .search-div{
+        width: 200px;
+    }
+
+
+    .world-section{
+        padding: 20px;
+    }
+
+    .car-text{
+        padding: 40px 0 !important;
+    }
+
+    .text-left, .text-right{
+        width: 100% !important;
+    }
+
+    .bottom-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    
+}
+
+.card img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card h6{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p{
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+
+.card-section{
+    display: flex;
+    margin-top: 100px;
+}
+
+.card-section img{
+    width: 40%;
+    border-radius: 10px;
+}
+
+.card-section .car-text{
+    width: 60%;
+    padding: 40px 70px;
+}
+
+.car-text h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.text-left, .text-right{
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
+.text-left p, .text-right p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bottom-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-text p{
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.textA{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bottom-text span{
+    margin: 0 10px;
+    padding: 6px 20px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+    border:1px solid white;
+
+}
+
+.search-Active{
+    display: none;
+}
+
+.lastbtn{
+    font-size: 20px;
+    color: rgb(118, 116, 116);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lastbtn i{
+    margin-right: 20px;
+}
+
+
