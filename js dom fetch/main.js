@@ -31,7 +31,7 @@ let url = fetch(a)
   })
   .then((data) => {
 
-    let dat = data.slice(0, 20);
+    let dat = data;
    
      for(let i = 0; i < dat.length; i++){
         console.log(dat[i]);

@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.list-section{
+    display: flex;
+    padding: 100px 0;
+    justify-content: center;
+    background-color: blue;
+}
+
+
+.list-box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+
+}
+
+.inputDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inputDiv input{
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 20px;
+
+}
+
+
+.inputDiv button{
+    padding: 10px;
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.listUl{
+    margin-top: 50px;
+}
+
+
+.listUl li{
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: azure;
+}
+
+.listUl li .solis{
+    padding: 10px;
+    color: red;
+    background-color: yellow;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.listUl li .chec{
+    padding: 10px;
+    color: green;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.Portfoli-section{
+    width: 70%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.Portfoli-section h2{
+    font-size: 40px;
+}
+
+
+.port-list{
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+.port-list ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.port-list ul li{
+    padding: 10px 15px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.port-list ul li:hover{
+    background-color: blue;
+}
+
+
+.port-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.port-box .boxs{
+    width: calc(33% - 17px);
+    border-left: 1px solid rgb(179, 179, 179) ;
+    border-right: 1px solid rgb(179, 179, 179) ;
+    padding: 10px;
+    text-align: center
+}
+
+.port-box .boxs img{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+
+}
+
+.port-box .boxs h5{
+    font-size: 20px;
+
+
+}
+
+.port-box .boxs p{
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.active-li{
+    background-color: blue !important;
+}
+
+
+.student-section{
+    margin: 100px 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.student-section button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    margin-bottom: 50px;
+    left: 40px;
+    cursor: pointer;
+}
+
+
+.student {
+    width: 70%;
+}
+
+.student input{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.student table {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.student table i{
+    cursor: pointer;
+}
+
+.student table, thead, tbody,tr,th,td{
+    border:1px solid black;
+    text-align: center;
+}
+
+
+
+
+.line-div{
+    position: fixed;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.813);
+    padding: 70px;
+    display: none;
+    border-radius: 10px;
+}
+
+.line-div .line-i{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    color: red;
+}
+
+.line-div input{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    background: none;
+}
+
+.line-div button{
+    background-color: green;
+    padding: 6px 10px;
+    color: wheat;
+    border: none;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.line-div2{
+    position: fixed;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.813);
+    padding: 70px;
+    display: none;
+    border-radius: 10px;
+}
+
+
+.line-div2 .line-i{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    color: red;
+}
+
+.line-div2 input{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    background: none;
+}
+
+.line-div2 button{
+    background-color: green;
+    padding: 6px 10px;
+    color: wheat;
+    border: none;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+

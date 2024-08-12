@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+</head>
+<body>
+
+    <div class="list-section">
+        <div class="list-box">
+            <div class="inputDiv">
+                <input id="intText" type="text">
+                <button id="addBtn">Add</button>
+            </div>
+
+            <ul id="listU" class="listUl">
+                
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="Portfoli-section">
+        <h2>PORTFOLIO</h2>
+        <div class="port-list">
+            <ul>
+                <li id="listAll" class="active-li">Show All</li>
+                <li>Nature</li>
+                <li>Car</li>
+                <li>People</li>
+            </ul>
+        </div>
+        <div id="porBoxt" class="port-box">
+           
+            
+        </div>
+    </div>
+
+
+
+    <div class="student-section">
+        <button class="addBtn">Add row</button>
+        <div class="line-div">
+            <div class="line-i"><i class="fa-solid fa-x"></i></div>
+            <input class="cName" placeholder="name..." type="text">
+            <input class="cSurname" placeholder="surname..." type="text">
+            <input class="cAge" placeholder="age..." type="text">
+            <div><button class="createBtn">create</button></div>
+        </div>
+        <div class="line-div2">
+            <div class="line-i"><i class="fa-solid fa-x"></i></div>
+            <input class="cName"  type="text">
+            <input class="cSurname"  type="text">
+            <input class="cAge"  type="text">
+            <div><button class="editBtn">edit</button></div>
+        </div>
+        <div class="student">
+            <input class="searchInt" placeholder="Axtaris..." type="text">
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th>age</th>
+                        <th>edit</th>
+                        <th>remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Suleyman</td>
+                        <td>Necefli</td>
+                        <td>20</td>
+                        <td><i class="fa-regular fa-pen-to-square editBtn"></i></td>
+                        <td><i class="fa-solid fa-trash removeBtn"></i></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Adil</td>
+                        <td>Hikmetov</td>
+                        <td>29</td>
+                        <td><i class="fa-regular fa-pen-to-square editBtn"></i></td>
+                        <td><i class="fa-solid fa-trash removeBtn"></i></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Nermin</td>
+                        <td>Xanimzade</td>
+                        <td>23</td>
+                        <td><i class="fa-regular fa-pen-to-square editBtn"></i></td>
+                        <td><i class="fa-solid fa-trash removeBtn"></i></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Aydin</td>
+                        <td>Memmedov</td>
+                        <td>25</td>
+                        <td><i class="fa-regular fa-pen-to-square editBtn"></i></td>
+                        <td><i class="fa-solid fa-trash removeBtn"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        
+    </div>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>

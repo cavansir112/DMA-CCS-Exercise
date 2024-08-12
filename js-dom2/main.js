@@ -796,6 +796,9 @@ var questionBank = [
       level: "Hard",
     },
   ];
+
+
+
  let filterSubject,filterLevel;
  document.querySelectorAll(".tabOne").forEach(btn=>{
    btn.addEventListener("click",function(){
@@ -813,9 +816,9 @@ var questionBank = [
    })
  })
  
- // let currentIndex;
+
  function page(index){
-   // currentIndex=index
+
  getData(index)
  }
  let correct_count=0,wrong_count=0;
