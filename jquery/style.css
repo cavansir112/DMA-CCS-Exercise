@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    position: absolute;
+}
+
 .list-section{
     display: flex;
     padding: 100px 0;
@@ -282,3 +286,130 @@
 
 }
 
+
+.basket-section{
+    margin: 80px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.shop-section{
+    width: 60%;
+
+}
+
+.shop .card{
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px 0;
+}
+
+.shop .card img{
+    width: 30%;
+    height: 200px;
+
+}
+
+.shop .card .shop-text{
+    width: 70%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop .card .shop-text span{
+    margin: 20px 0;
+}
+
+#basketBtn{
+    color: rgb(255, 149, 0);
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 25px;
+
+}
+
+#addBtn{
+    cursor: pointer;
+}
+
+.line{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    padding: 100px 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(130, 130, 130, 0.831);
+
+}
+
+.modal{
+    padding: 20px;
+    width: 40%;
+    margin-left: 55%;
+    background-color: white;
+    margin-right: 50px;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.cardM{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    padding: 10px;
+}
+
+.cardM img{
+    width: 30%;
+    height: 100px;
+}
+
+#removBtn{
+    font-size: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.cardM-text{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cardM-text h5{
+    margin-bottom: 10px;
+}
+
+.cardM-text .say{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cardM-text .say span{
+    font-size: 12px;
+    padding: 3px 7px;
+    border: 1px solid white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.btnRemove{
+    margin-left: 30px;
+    cursor: pointer;
+}

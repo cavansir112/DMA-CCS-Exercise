@@ -242,4 +242,148 @@ $(function(){
 
 
 
+
+        let arr3 = [
+            {
+                id: 0,
+                name: "Komputer1",
+                castumer: 1123,
+                img: "img/img1.jpg"
+            },
+            {
+                id: 1,
+                name: "Komputer2",
+                castumer: 1343,
+                img: "img/img2.png"
+            },
+            {
+                id: 2,
+                name: "Komputer3",
+                castumer: 923,
+                img: "img/img3.jpg"
+            },
+            {
+                id: 3,
+                name: "Komputer4",
+                castumer: 1222,
+                img: "img/img4.jpg"
+            },
+        ]
+
+        let basgetArr = [];
+
+
+        function shopHtml(){
+            for(let i = 0; i < arr3.length; i++){
+
+                $(".shop").append(`
+                    <div class="card">
+                        <img src="${arr3[i].img}" alt="">
+                        <div class="shop-text">
+                            <h2>${arr3[i].name}</h2>
+                            <span>$${arr3[i].castumer}</span>
+                            <i ID="${i}"  id="addBtn${arr3[i].id}" class="fa-solid fa-cart-shopping bast"></i>
+                        </div>
+                    </div>
+                `)
+
+            }
+            
+        }
+
+        let count = 0;
+        let totalPrice=0;
+        $(document).on("click", ".bast", (e)=>{
+            let id = $(e.target).attr("ID");
+            let findBasket = basgetArr.find(p=>p.id==id)
+            let pruduct = arr3.find(p=>p.id==id)
+            console.log(findBasket);
+            if(!findBasket){
+                basgetArr.push({
+                    id:pruduct.id,
+                    name:pruduct.name,
+                    castumer:pruduct.castumer,
+                    img:pruduct.img,
+                    count: 1
+                })
+                count++
+            }else{
+                findBasket.count++
+            }
+
+            console.log(basgetArr);
+            $("#shopCount").text(count);
+        })
+
+
+        shopHtml()
+
+
+        $("#removBtn").click(function(){
+            $(".line").hide(300);
+        })
+
+        $("#basketBtn").click(function(){
+            $(".line").show(300);
+            loadBsket();
+        })
+
+        const loadBsket=()=>{
+            $(".content").html("");
+            totalPrice=0;
+            count=0;
+            $(basgetArr).each((index,element)=>{
+                $(".content").append(`
+                    <div class="cardM">
+                        <img src="${element.img}" alt="">
+                        <div class="cardM-text">
+                            <h5>${element.name}</h5>
+                            <span>price: $${element.castumer} <br>total price $${element.castumer*element.count}</span>
+                            <div class="say"><div style="display: flex;"><span prodactId="${element.id} class="litle">-</span><span class="sayDiv">${element.count}</span><span prodactId="${element.id} class="letOf">+</span></div> <i prodactId="${element.id}"  class="fa-solid fa-trash btnRemove"></i></div>
+                        </div>
+                    </div>
+                `)
+                totalPrice+=element.castumer*element.count;
+                count+=element.count
+            })
+            $(".total").text(totalPrice + "$")
+            $("#shopCount").text(count);
+
+        }
+
+        $(document).on("click",".btnRemove",(e)=>{
+            let id = $(e.target).attr("prodactId")
+            let findPraduct = basgetArr.find(p=>p.id==id)
+            basgetArr.splice(basgetArr.indexOf(findPraduct),1)
+            loadBsket()
+        })
+
+        $(document).on("click", ".letOf", (e)=>{
+            console.log("wec");
+            let id = $(e.target).attr("prodactId")
+            let findPraduct = basgetArr.find(p=>p.id==id)
+            findPraduct.count++
+            loadBsket()
+        })
+
+        $(document).on("click", ".litle", (e)=>{
+            console.log("wec");
+            let id = $(e.target).attr("prodactId")
+            let findPraduct = basgetArr.find(p=>p.id==id)
+            if(findPraduct.count==1){
+                return
+            }else{
+                findPraduct.count--
+            }
+            loadBsket()
+        })
+
+        
+
+      
+
+
+
+
+
 });

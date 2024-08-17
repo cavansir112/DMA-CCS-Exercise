@@ -1,0 +1,245 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link:hover,.nav-link.active{
+color: aquamarine !important;
+}
+
+.nav-link.active{
+background-color: red;
+color: white;
+}
+
+.my-header{
+background-color: aquamarine;
+padding-top: 150px;
+padding-bottom: 80px;
+}
+
+.my-header h1{
+font-size: 100px;
+}
+
+.divider i{
+    font-size: 35px;
+    margin: 0 10px;
+}
+
+.line{
+width: 112px;
+height: 4px;
+}
+
+.my-section{
+padding: 80px 0;
+}
+
+.active-a{
+    color: aquamarine !important;
+}
+
+.portfolio-item{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.portfolio-item .b-line{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: white;
+    background-color: rgba(127, 255, 212, 0.76);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.portfolio-item .b-line:hover{
+    opacity: 1;
+}
+
+.about-section{
+    background-color: aquamarine;
+}
+
+.about h2{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+
+.contact-section{
+    padding: 100px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.contact-section h2{
+    font-size: 48px;
+    color: #2c3e50;
+}
+
+.contact-section .form-div{
+    width: 60%;
+    margin: 20px auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .form-div input{
+    padding: 12px 48px 24px 0px;
+    width: 100%;
+    outline: none;
+    font-size: 25px;
+    border: none;
+    margin: 10px 0;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.contact-section .form-div input:focus+label,
+.contact-section .form-div input:valid+label,
+.contact-section .form-div textarea:focus+label,
+.contact-section .form-div textarea:valid+label{
+    top: 20px;
+    left: 0;
+    font-size: 15px;
+}
+
+.contact-section .form-div #email + label{
+    top: 40px;
+    left: 10px;
+    font-size: 25px;
+}
+
+.contact-section .form-div #email:focus+label,
+.contact-section .form-div #email:invalid+label{
+    top: 20px;
+    left: 0px;
+    font-size: 15px;
+}
+
+
+
+.contact-section .form-div .form-sec{
+    position: relative;
+    padding: 20px 0;
+}
+
+.contact-section .form-div input:focus{
+    border: none;
+    border-bottom: 1px solid #2c3e50;
+}
+
+
+.contact-section .form-div label{
+    font-size: 25px;
+    color: #2c3e50;
+    top: 40px;
+    left: 10px;
+    position: absolute;
+    transition: 0.3s;
+    pointer-events: none; 
+
+}
+
+.contact-section .form-div textarea{
+    width: 100%;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #2c3e50;
+    padding: 24px 0;
+}
+
+
+
+
+.contact-section .form-div #btn{
+    border: none;
+    width: 100px;
+    font-size: 20px;
+    padding: 25px;
+    color: white;
+    border-radius: 5px;
+    background-color: #2be1bc;
+    cursor: pointer;
+}
+
+.footer-div{
+    padding: 80px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    background-color: #2c3e50;
+}
+
+
+
+.footer-div .footer-box h4{
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-div .footer-box p{
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.footer-div .footer-box .icon-box{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.footer-div .footer-box p a{
+    color: #1ABC9C;
+    transition: 0.3s;
+}
+
+.footer-div .footer-box p a:hover{
+    color: #076855;
+}
+
+.footer-div .footer-box .icon-box i{
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0 5px;
+    border: 1px solid white;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+
+.footer-div .footer-box .icon-box i:hover{
+    background-color: white;
+    color: black;
+}
+
+.footer-bottom{
+    padding: 24px 0;
+    text-align: center;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    background-color: #1a252f;
+}
