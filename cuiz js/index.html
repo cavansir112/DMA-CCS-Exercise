@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* text-decoration: line-through; */
+        }
+
+        .haz{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="intP" type="text">
+        <button onclick="add()">add</button>
+    </div>
+    <ul id="ulList">
+        
+    </ul>
+    
+
+
+
+    <script>
+        let a = 5
+
+        function fac(a){
+            let b = 1;
+            for(let i = 1; i <= a; i++){
+                b = b*i
+            }
+            console.log(b);
+        }
+
+        fac(a)
+
+
+            function add(){
+
+                let input = intP.value
+                intP.value = ""
+
+                if(input == ""){
+                    return;
+                }else{
+                    ulList.innerHTML+=`
+                    <li>${input} <button onclick="del(this)">x</button> <button onclick="haz(this)">hazir</button></li>
+                `
+                }
+
+                
+            }
+
+            function del(x){
+                x.parentElement.style.display = "none";
+            }
+
+            function haz(x){
+                x.parentElement.classList.add("haz")
+            }
+
+
+            let arry = [2,4,63,5,6,5,76,3,3,2,2,7];
+
+            for(let i = 0; i < arry.length; i++){
+                for(let j = i+1; j < arry.length; j++){
+                    if(arry[i] == arry[j]){
+                        arry.splice(j,1);
+                        j--
+                    }
+
+                }
+            }
+
+            console.log(arry);
+
+
+        
+            
+
+    </script>
+</body>
+</html>

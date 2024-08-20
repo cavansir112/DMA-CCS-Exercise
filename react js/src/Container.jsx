@@ -36,7 +36,7 @@ function Container(){
         },
     ]
     return(
-        <div className="container d-flex flex-wrap ">
+        <div className="container d-flex flex-wrap justify-content-center">
             
             {
                 arr.map((item,index)=>{
