@@ -1,47 +1,26 @@
 import React, { useState } from "react";
+import List from "./List";
+import { useDispatch } from "react-redux";
+import { addTodo } from "./todoSlice";
 
 function Todo(){
-    const [list,setList] = useState(["item1","item2","item3"]);
-    const [getValue,setValue] = useState("");
+   
+    let [val,setval] = useState("");
+    let dis=useDispatch()
 
-    function addBtn(){
-        if(getValue == ""){
-            return;
-        }else{
-            setList([...list,getValue])
-            setValue("");
-        }
+    function addList(){
+        dis(addTodo(val))
+        setval("")
     }
 
-    function sil(i){
-        const mList = [...list];
-        mList.splice(i,1);
-        setList(mList);
-
-    }
-
-    function cek(i){
-        const listCheck = document.querySelectorAll("li")[i];
-        listCheck.classList.add("activeChek");
-        const disibledBtn = document.querySelectorAll(".cekBtn")[i];
-        disibledBtn.disabled = true;
-    }
     return(
         <div className="list-section">
             <div className="list-box">
                 <div className="inputDiv">
-                    <input value={getValue} id="intText" type="text" onChange={(e)=>
-                    setValue(e.target.value)}></input>
-                    <button onClick={addBtn}>Add</button>
+                    <input   id="intText" type="text" value={val} onChange={(e)=>setval(e.target.value)}></input>
+                    <button onClick={addList}>Add</button>
                 </div>
-
-                <ul id="listU" className="listUl">
-                    {
-                        list?.map((item,index)=>{
-                            return <li key={index}>{item} <div><button onClick={()=>sil(index)}><i class="fa-solid fa-trash"></i></button><button className="cekBtn" onClick={(e)=>cek(index)}><i class="fa-solid fa-check"></i></button></div></li>
-                        })
-                    }
-                </ul>
+                <List/>
             </div>
         </div>
     )

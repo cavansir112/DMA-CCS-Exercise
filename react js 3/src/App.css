@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+table{
+  width: 100%;
+
+}
+
+table, tr, td, th{
+  border: solid 1px black
+}
+
+th{
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: aqua;
+}
+
+td{
+  padding: 7px 20px;
+  font-size: 18px;
+  background-color: yellow;
+}
+
+td button{
+  padding: 5px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+
+
+}
+
+.table-divs{
+  width: 40%;
+  margin: 100px auto;
+}
+
+.modal{
+  display: none;
+}
+
+.modal-active{
+  display: flex;
+  position: fixed;
+  top: 100px;
+  left: 30%;
+  padding: 50px 50px;
+  width: 500px;
+  flex-direction: column;
+  background-color: white;
+  border: solid 1px black;
+}
+
+.modal i{
+  font-size: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.modal input{
+  padding: 8px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.modal button{
+  width: 50px;
+}
+
+#intputs{
+  padding: 8px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+}
