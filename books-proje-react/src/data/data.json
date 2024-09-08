@@ -1,0 +1,104 @@
+{
+  "books": [
+    {
+      "img": "https://strgimgr.umico.az/sized/1680/460666-c8da36e05f02e3f77b7491ca7aaab6d5.jpg",
+      "title": "Susan Qadin",
+      "jhaneraId": "1",
+      "authorId": "1",
+      "price": 19.99,
+      "id": "fde2"
+    },
+    {
+      "img": "https://novella.az/wp-content/uploads/2020/07/Ekran-s%C9%99kli-2024-04-22-194951.png",
+      "title": "Melek",
+      "jhaneraId": "1",
+      "authorId": "2",
+      "price": 29.99,
+      "id": "3970"
+    },
+    {
+      "img": "https://www.teaspress.az/storage/1354/conversions/boyuk-oyun-front-book.jpg",
+      "title": "Boyuk oyun",
+      "jhaneraId": "3",
+      "authorId": "3",
+      "price": 14.99,
+      "id": "e006"
+    },
+    {
+      "img": "https://static.insales-cdn.com/images/products/1/5164/197112876/Eksperiment_01.jpg",
+      "title": "Experiment",
+      "jhaneraId": "2",
+      "authorId": "1",
+      "price": 24.99,
+      "id": "244c"
+    },
+    {
+      "img": "https://static.insales-cdn.com/images/products/1/4321/197177569/Qaraqan_qapaq_Birinci_Addim.png",
+      "title": "Birinci addim ",
+      "jhaneraId": "2",
+      "authorId": "2",
+      "price": 12.99,
+      "id": "203c"
+    },
+    {
+      "img": "https://static.insales-cdn.com/images/products/1/5176/197112888/fil_01.jpg",
+      "title": "Filler Olende",
+      "jhaneraId": "1",
+      "authorId": "3",
+      "price": 22.99,
+      "id": "a140"
+    },
+    {
+      "id": "98ac",
+      "title": "Gorunmeyen izler",
+      "price": "19.90",
+      "img": "https://bookmart.az/wp-content/uploads/2023/12/gorunmeyen-izler-front-book.jpg",
+      "authorId": "1",
+      "jhaneraId": "1"
+    },
+    {
+      "id": "8af1",
+      "title": "Ele kecmez yaquar",
+      "price": "18.90",
+      "img": "https://static.insales-cdn.com/images/products/1/5666/725628450/elekecmez-yaquar-front-book.jpg",
+      "authorId": "1",
+      "jhaneraId": "1"
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "name": "Elxan Elatli"
+    },
+    {
+      "id": "2",
+      "name": "Qaraqan"
+    },
+    {
+      "id": "3",
+      "name": "Mariam Shirazi"
+    },
+    {
+      "id": "1894",
+      "name": "Cingiz Abdullayev"
+    }
+  ],
+  "jhaneras": [
+    {
+      "id": "1",
+      "name": "Dedektiv"
+    },
+    {
+      "id": "2",
+      "name": "Dram"
+    },
+    {
+      "id": "3",
+      "name": "Bilimser"
+    },
+    {
+      "id": "8de3",
+      "name": "anonim"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "praduct": [
+    {
+      "id": "1",
+      "name": "Product 1",
+      "img": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_400,h_400/https://umico.az/live/wp-content/uploads/2024/02/1-42.jpg",
+      "price": 700,
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "name": "Product 2",
+      "img": "https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_400,h_400/https://umico.az/live/wp-content/uploads/2024/02/2-42.jpg",
+      "price": 1200,
+      "quantity": 1
+    },
+    {
+      "id": "3",
+      "name": "Product 3",
+      "img": "https://texnomart.az/wp-content/uploads/2022/07/texnomart-Huawei-Y70-Blue-ag95vsif87m4wnxb1qr6.jpg",
+      "price": 300,
+      "quantity": 3
+    },
+    {
+      "id": "4",
+      "name": "Product 4",
+      "img": "https://texnomart.az/wp-content/uploads/2022/04/texnomart-Xiaomi-Redmi-Note-11-Pro-5G-Gray-ka5ju6ymvlbg7x2h83f1.jpg",
+      "price": 400,
+      "quantity": 4
+    },
+    {
+      "id": "5",
+      "name": "Product 5",
+      "img": "https://texnomart.az/wp-content/uploads/2021/08/Smartfon-Samsung-Galaxy-A72-128GB-Black.jpg",
+      "price": 450,
+      "quantity": 5
+    },
+    {
+      "id": "6",
+      "name": "Product 6",
+      "img": "https://texnomart.az/wp-content/uploads/2022/11/texnomart-Xiaomi-12X-Gray-m9uar2e6wchvbl5k3t4n.jpg",
+      "price": 600,
+      "quantity": 6
+    }
+  ],
+  "basket": [
+    {
+      "id": "05c5",
+      "count": 1
+    },
+    {
+      "id": "1ac4",
+      "productId": "1",
+      "count": 1
+    },
+    {
+      "id": "7369",
+      "productId": "2",
+      "count": 1
+    },
+    {
+      "id": "ffb5",
+      "productId": "6",
+      "count": 1
+    },
+    {
+      "id": "edf4",
+      "productId": "5",
+      "count": 1
+    }
+  ]
+}

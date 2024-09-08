@@ -79,10 +79,15 @@
 
 .menu-list li{
   margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.active-menu{
+  border-left: solid 3px var(--grenger);
 }
 
 .menu-list a:hover{
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .menu-list a{
@@ -90,6 +95,7 @@
   color: var(--menu-item-color) ;
   text-decoration: none;
   transition: 0.3s;
+  margin-left: 10px;
 }
 
 .menu-list i{
@@ -398,3 +404,138 @@
 .fact-item:hover  h4{
   color: var(--main-bg-color) !important;
 }
+
+
+.Portfoli-section{
+  width: 100%;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.Portfoli-section h2{
+  font-size: 40px;
+}
+
+
+.port-list{
+  margin: 50px 0;
+}
+
+
+.port-list ul{
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.port-list ul li{
+  padding: 10px 15px;
+  color: #888;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.port-list ul li:hover{
+  color: black;
+}
+
+
+.port-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.port-box .boxs{
+  width: calc(33% - 17px);
+  border-left: 1px solid rgb(179, 179, 179) ;
+  border-right: 1px solid rgb(179, 179, 179) ;
+  padding: 10px;
+  text-align: center
+}
+
+.port-box .boxs img{
+  width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+
+}
+
+.port-box .boxs h5{
+  font-size: 20px;
+
+
+}
+
+.port-box .boxs p{
+  font-size: 17px;
+  margin-top: 20px;
+}
+
+.active-li{
+  background-color: var(--grenger) !important;
+  color: var(--main-bg-color) !important;
+}
+
+.card{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transition: 0.3s;
+}
+
+.card:hover img{
+  width: 110%;
+  height: 110%;
+}
+
+.card .line{
+  width: 100%;
+  height: 100%;
+  background-color: #ff5959ca;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  opacity: 0;
+  transition: 0.3s;
+  padding: 40px 15px 15px 15px !important;
+}
+
+.card .line:hover{
+  opacity: 1;
+  padding-top: 15px !important;
+}
+
+.card .line span{
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: var(--main-bg-color);
+  color: var(--grenger);
+}
+
+.card .line h4{
+  font-size: 18px;
+  margin:0;
+  font-weight: bold;
+}
+

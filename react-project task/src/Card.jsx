@@ -1,20 +1,16 @@
 import React from "react";
 
-function Card() {
+function Card({img,text1,text2}) {
     return(
         <div className="col-lg-4 col-md-6 col-sm-12">
-            <div className="card mx-2 my-5">
-                <div className="posit-div">
-                <i class="fa-solid fa-user iconClass"></i>
-                </div>
-                <h6>{name}</h6>
-                <span>{email}</span>
-                <p>{specialty}</p>
-                <div id='iconDiv' className="d-flex mt-2 w-100 justify-content-center">
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <div className="card mb-4">
+                <img src={`${img}`} alt="" />
+                <div className="line">
+                    <div>
+                        <h4>{text1}</h4>
+                        <p>{text2}</p>
+                    </div>
+                    <span>+</span>
                 </div>
             </div>
         </div>
